@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/project4.png";
 
 
 export const EXPERIENCES = [
@@ -70,6 +71,7 @@ export const PROJECTS = [
   },
   {
     title: "Deployed website on AWS",
+    image: project4,
     description:
       "Deployed a secure e-commerce website on AWS, cutting server costs by 15%.",
     technologies: ["AWS S3", "EC2", "NAT gateway", "VPC", "Route 53"],
