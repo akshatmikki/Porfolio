@@ -88,6 +88,7 @@ const Projects = ({ isDarkMode }) => {
                 </div>
               </motion.div>
             </div>
+            <br>
           ) : (
             <div key={index} className=" flex flex-wrap lg:justify-center">
               <motion.div
