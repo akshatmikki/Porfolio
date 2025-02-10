@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import logoDark from "../assets/logo_dark.svg";
-import logoLight from "../assets/logo_light.svg";
 import { BiChevronUp, BiChevronDown } from "react-icons/bi";
 import { BiSun, BiMoon } from "react-icons/bi";
 import { motion } from "framer-motion";
