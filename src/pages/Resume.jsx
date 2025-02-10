@@ -76,15 +76,6 @@ const Resume = ({ isDarkMode, setIsDarkMode }) => {
       <Social isDarkMode={isDarkMode} />
       <Email isDarkMode={isDarkMode} />
       <nav className="max-[425px]:mt-5 flex items-center justify-between py-8 mx-auto px-8 max-md:px-4">
-        <div className="flex flex-shrink-0 items-center">
-          <a href="/">
-            <img
-              className="mx-2 w-10"
-              src={isDarkMode ? logoLight : logoDark}
-              alt="logo"
-            />
-          </a>
-        </div>
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
           className={`ml-4 text-lg ${
