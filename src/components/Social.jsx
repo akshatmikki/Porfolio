@@ -1,7 +1,8 @@
 import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-//import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaHackerrank } from "react-icons/fa";
+import { SiLeetcode } from "react-icons/si";
 import { NAVLINKS } from "../constants/index";
 import { motion } from "framer-motion";
 
@@ -56,11 +57,27 @@ const Social = ({ isDarkMode }) => {
         >
           <a
             target="_blank"
-            href={NAVLINKS.x}
+            href={NAVLINKS.hackerrank}
             className={`${
               isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
             }`}
           >
+            <FaHackerrank />
+          </a>
+        </li>
+        <li
+          className={` last-of-type:mb-10 pt-6 cursor-pointer hover:transform hover:-translate-y-1 hover:text-white ${
+            isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
+          }`}
+        >
+          <a
+            target="_blank"
+            href={NAVLINKS.leetcode}
+            className={`${
+              isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
+            }`}
+          >
+            <SiLeetcode />
           </a>
         </li>
       </ul>
