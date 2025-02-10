@@ -19,7 +19,7 @@ const Projects = ({ isDarkMode }) => {
       <div className=" max-[768px]:hidden">
         {PROJECTS.map((project, index) =>
           index % 2 == 0 ? (
-            <div key={index} className=" flex flex-wrap lg:justify-center">
+            <div key={index} className=" flex flex-wrap lg:justify-center mb-20">
               <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -90,7 +90,7 @@ const Projects = ({ isDarkMode }) => {
               </motion.div>
             </div>
           ) : (
-            <div key={index} className=" flex flex-wrap lg:justify-center">
+            <div key={index} className=" flex flex-wrap lg:justify-center mb-20">
               <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -165,7 +165,7 @@ const Projects = ({ isDarkMode }) => {
       </div>
       <div className=" min-[769px]:hidden">
         {PROJECTS.map((project, index) => (
-          <div key={index} className=" mb-6 flex flex-wrap lg:justify-center">
+          <div key={index} className=" mb-16 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
