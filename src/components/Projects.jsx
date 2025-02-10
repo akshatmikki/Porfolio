@@ -27,6 +27,7 @@ const Projects = ({ isDarkMode }) => {
                 transition={{ duration: 0.5 }}
                 className="w-full lg:w-1/2"
               >
+                <div> </div>
                 <img
                   src={project.image}
                   width={550}
@@ -149,6 +150,7 @@ const Projects = ({ isDarkMode }) => {
                 transition={{ duration: 0.5 }}
                 className="w-full lg:w-1/2"
               >
+                <div> </div>
                 <img
                   src={project.image}
                   width={550}
@@ -178,6 +180,7 @@ const Projects = ({ isDarkMode }) => {
                 transition={{ duration: 0.5 }}
                 className="w-full lg:w-1/2"
               >
+                <div> </div>
                 <img
                   src={project.image}
                   width={550}
