@@ -39,22 +39,6 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <nav className=" max-[425px]:mt-5 flex items-center justify-between py-2">
-        <motion.div
-          variants={container(0)}
-          initial="hidden"
-          animate="visible"
-          className="flex flex-shrink-0 items-center"
-        >
-          {isDarkMode ? (
-            <a href="/">
-              <img className="mx-2 w-10" src={logoLight} alt="logo" />
-            </a>
-          ) : (
-            <a href="/">
-              <img className="mx-2 w-10" src={logoDark} alt="logo" />
-            </a>
-          )}
-        </motion.div>
         <div className="hidden md:flex m-8 item-center justify-center gap-4 text-2xl">
           <motion.button
             variants={container(0.2)}
