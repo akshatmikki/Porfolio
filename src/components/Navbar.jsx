@@ -36,8 +36,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <>
-      <nav className=" max-[425px]:mt-5 flex items-center justify-between py-2">
-        <div className="hidden md:flex m-8 item-center justify-center gap-4 text-2xl">
+      <nav className="fixed right-0 top-0 flex flex-col items-end py-2 pr-4">
+        <div className="hidden md:flex flex-col items-end m-8 gap-4 text-2xl">
           <motion.button
             variants={container(0.2)}
             initial="hidden"
@@ -103,8 +103,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className={`text-white text-base ml-2 border-2 px-4 py-1 rounded-md hover:bg-[rgba(256,256,256,0.1)] ${
-              isDarkMode ? "text-slate-700  hover:bg-slate-800" : ""
+            className={`text-white text-base border-2 px-4 py-1 rounded-md hover:bg-[rgba(256,256,256,0.1)] ${
+              isDarkMode ? "text-slate-700 hover:bg-slate-800" : ""
             }`}
           >
             Resume
@@ -114,7 +114,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             initial="hidden"
             animate="visible"
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="ml-4 text-lg text-white"
+            className="text-lg text-white"
           >
             {!isDarkMode ? <BiSun size={30} /> : <BiMoon size={30} />}
           </motion.button>
@@ -132,26 +132,17 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             <BiChevronDown size={30} />
           )}
         </motion.button>
-        <motion.button
-          variants={container(0.3)}
-          initial="hidden"
-          animate="visible"
-          onClick={() => setIsDarkMode(!isDarkMode)}
-          className="ml-4 md:hidden text-lg text-gray-400"
-        >
-          {!isDarkMode ? <BiSun size={30} /> : <BiMoon size={30} />}
-        </motion.button>
       </nav>
       {isDropdownOpen && (
         <motion.div
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
-          className=" bg-slate-900 mt-1 z-10  absolute right-0 left-0 flex flex-col items-center ease-in ease-out"
+          className="bg-slate-900 mt-1 z-10 absolute right-4 flex flex-col items-end ease-in ease-out"
           ref={dropdownRef}
         >
           <button
-            className=" text-xl py-2 w-full font-mono rounded-lg rounded-b-none	 border-t border-l border-r "
+            className="text-xl py-2 w-full font-mono border-t border-l border-r"
             onClick={() =>
               document
                 .getElementById("about")
@@ -161,7 +152,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             About
           </button>
           <button
-            className=" text-xl py-2 w-full font-mono  rounded-t-none	 border-t border-l border-r "
+            className="text-xl py-2 w-full font-mono border-t border-l border-r"
             onClick={() =>
               document
                 .getElementById("technologies")
@@ -171,7 +162,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             Technologies
           </button>
           <button
-            className=" text-xl py-2 w-full font-mono  border-t border-l border-r "
+            className="text-xl py-2 w-full font-mono border-t border-l border-r"
             onClick={() =>
               document
                 .getElementById("experience")
@@ -181,7 +172,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             Experience
           </button>
           <button
-            className=" text-xl py-2 w-full font-mono  border-t border-l border-r "
+            className="text-xl py-2 w-full font-mono border-t border-l border-r"
             onClick={() =>
               document
                 .getElementById("projects")
@@ -192,7 +183,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </button>
           <Link
             to="/resume"
-            className=" text-xl py-2 w-full font-mono rounded-lg rounded-t-none text-center	 border-t border-b border-l border-r "
+            className="text-xl py-2 w-full font-mono border-t border-b border-l border-r text-center"
           >
             Resume
           </Link>
