@@ -10,7 +10,7 @@ const Projects = ({ isDarkMode }) => {
         viewport={{ once: true }}
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
-        className={`mt-12 text-center text-4xl ${
+        className={`mt-12 mb-12 text-center text-4xl ${
           isDarkMode ? "text-neutral-800" : ""
         }`}
       >
