@@ -37,7 +37,9 @@ export const EXPERIENCES = [
 
 export const NAVLINKS = {
   github: "https://github.com/akshatmikki",
-  linkedIn: "https://www.linkedin.com/in/akshat-singhal-963127202/"
+  linkedIn: "https://www.linkedin.com/in/akshat-singhal-963127202/",
+  hackerrank: "https://www.hackerrank.com/profile/akshatsinghal021",
+  leetcode: "https://leetcode.com/u/akshatsinghal0204/",
 };
 
 
