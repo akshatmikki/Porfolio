@@ -29,8 +29,8 @@ const Projects = ({ isDarkMode }) => {
               >
                 <img
                   src={project.image}
-                  max-width={550}
-                  max-height={550}
+                  width={550}
+                  height={550}
                   alt={project.title}
                   className="mb-6 rounded"
                 />
@@ -125,6 +125,14 @@ const Projects = ({ isDarkMode }) => {
                 ))}
                 <div className="mt-10">
                   <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" cursor-pointer mr-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+                  >
+                    Live
+                  </a>
+                  <a
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -143,8 +151,8 @@ const Projects = ({ isDarkMode }) => {
               >
                 <img
                   src={project.image}
-                  max-width={550}
-                  max-height={550}
+                  width={550}
+                  height={550}
                   alt={project.title}
                   className="mb-6 rounded"
                 />
@@ -172,63 +180,8 @@ const Projects = ({ isDarkMode }) => {
               >
                 <img
                   src={project.image}
-                  max-width={550}
-                  max-height={550}
-                  alt={project.title}
-                  className=" rounded"
-                />
-              </motion.div>
-              <h6
-                className={`mb-2 font-semibold ${
-                  isDarkMode ? " text-slate-800" : ""
-                }`}
-              >
-                {project.title}
-              </h6>
-              <p
-                className={`mb-4 text-neutral-400 ${
-                  isDarkMode ? " text-slate-800" : ""
-                }`}
-              >
-                {project.description}
-              </p>
-              {project.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className={`mr-2 rounded  px-2 py-1 text-sm font-medium  ${
-                    isDarkMode
-                      ? " bg-neutral-300 text-slate-800"
-                      : "text-purple-900 bg-neutral-900"
-                  }`}
-                >
-                  {tech}
-                </span>
-              ))}
-            </motion.div>
-          </div>
-        ))}
-      </div>
-      <div className=" min-[769px]:hidden">
-        {PROJECTS.map((project, index) => (
-          <div key={index} className=" mb-6 flex flex-wrap lg:justify-center">
-            <motion.div
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              initial={{ opacity: 0, y: 100 }}
-              transition={{ duration: 0.5 }}
-              className="w-full max-w-md lg:w-1/2"
-            >
-              <motion.div
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                initial={{ opacity: 0, y: 100 }}
-                transition={{ duration: 0.5 }}
-                className="w-full lg:w-1/2"
-              >
-                <img
-                  src={project.image}
-                  max-width={550}
-                  max-height={550}
+                  width={550}
+                  height={550}
                   alt={project.title}
                   className=" rounded"
                 />
