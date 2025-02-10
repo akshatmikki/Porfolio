@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import resumeFile from "../assets/Akshat_Singhal.pdf";
-import logoDark from "../assets/logo_dark.svg";
-import logoLight from "../assets/logo_light.svg";
 import { BiSun, BiMoon } from "react-icons/bi";
 import profilePic from "../assets/image.jpg";
 import Social from "../components/Social";
