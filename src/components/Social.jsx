@@ -57,12 +57,12 @@ const Social = ({ isDarkMode }) => {
         >
           <a
             target="_blank"
-            href={NAVLINKS.hackerrank}
+            href={NAVLINKS.leetcode}
             className={`${
               isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
             }`}
           >
-            <FaHackerrank />
+            <SiLeetcode />
           </a>
         </li>
         <li
@@ -72,12 +72,12 @@ const Social = ({ isDarkMode }) => {
         >
           <a
             target="_blank"
-            href={NAVLINKS.leetcode}
+            href={NAVLINKS.hackerrank}
             className={`${
               isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
             }`}
           >
-            <SiLeetcode />
+            <FaHackerrank />
           </a>
         </li>
       </ul>
