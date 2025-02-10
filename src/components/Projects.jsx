@@ -29,7 +29,7 @@ const Projects = ({ isDarkMode }) => {
               >
                 <img
                   src={project.image}
-                  width={550}
+                  max-width={550}
                   height={550}
                   alt={project.title}
                   className="mb-6 rounded"
@@ -88,7 +88,6 @@ const Projects = ({ isDarkMode }) => {
                 </div>
               </motion.div>
             </div>
-            <br>
           ) : (
             <div key={index} className=" flex flex-wrap lg:justify-center">
               <motion.div
