@@ -36,15 +36,13 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
   return (
     <>
-      <nav className="fixed right-0 top-0 flex flex-col items-end py-2 pr-4">
-        <div className="hidden md:flex flex-col items-end m-8 gap-4 text-2xl">
+      <nav className="fixed top-0 left-0 right-0 flex justify-end py-2 px-4 bg-gray-900 text-white">
+        <div className="hidden md:flex items-center gap-6 text-lg">
           <motion.button
             variants={container(0.2)}
             initial="hidden"
             animate="visible"
-            className={`hover:text-white text-lg ${
-              isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
-            }`}
+            className="hover:text-gray-300"
             onClick={() =>
               document
                 .getElementById("about")
@@ -57,9 +55,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             variants={container(0.4)}
             initial="hidden"
             animate="visible"
-            className={`hover:text-white text-lg ${
-              isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
-            }`}
+            className="hover:text-gray-300"
             onClick={() =>
               document
                 .getElementById("technologies")
@@ -72,9 +68,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             variants={container(0.6)}
             initial="hidden"
             animate="visible"
-            className={`hover:text-white text-lg ${
-              isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
-            }`}
+            className="hover:text-gray-300"
             onClick={() =>
               document
                 .getElementById("experience")
@@ -87,9 +81,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             variants={container(0.8)}
             initial="hidden"
             animate="visible"
-            className={`hover:text-white text-lg ${
-              isDarkMode ? "text-slate-700 hover:text-neutral-900" : ""
-            }`}
+            className="hover:text-gray-300"
             onClick={() =>
               document
                 .getElementById("projects")
@@ -103,9 +95,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             variants={container(1)}
             initial="hidden"
             animate="visible"
-            className={`text-white text-base border-2 px-4 py-1 rounded-md hover:bg-[rgba(256,256,256,0.1)] ${
-              isDarkMode ? "text-slate-700 hover:bg-slate-800" : ""
-            }`}
+            className="border px-4 py-1 rounded-md hover:bg-gray-700"
           >
             Resume
           </MotionLink>
@@ -114,7 +104,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             initial="hidden"
             animate="visible"
             onClick={() => setIsDarkMode(!isDarkMode)}
-            className="text-lg text-white"
+            className="text-lg"
           >
             {!isDarkMode ? <BiSun size={30} /> : <BiMoon size={30} />}
           </motion.button>
@@ -123,7 +113,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           variants={container(0.2)}
           initial="hidden"
           animate="visible"
-          className="md:hidden text-lg text-white"
+          className="md:hidden text-lg"
           onClick={toggleDropdown}
         >
           {isDropdownOpen ? (
@@ -138,11 +128,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: 50 }}
           transition={{ duration: 0.5 }}
-          className="bg-slate-900 mt-1 z-10 absolute right-4 flex flex-col items-end ease-in ease-out"
+          className="bg-gray-900 mt-1 z-10 absolute right-4 flex flex-col items-end ease-in ease-out"
           ref={dropdownRef}
         >
           <button
-            className="text-xl py-2 w-full font-mono border-t border-l border-r"
+            className="text-xl py-2 w-full font-mono border"
             onClick={() =>
               document
                 .getElementById("about")
@@ -152,7 +142,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             About
           </button>
           <button
-            className="text-xl py-2 w-full font-mono border-t border-l border-r"
+            className="text-xl py-2 w-full font-mono border"
             onClick={() =>
               document
                 .getElementById("technologies")
@@ -162,7 +152,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             Technologies
           </button>
           <button
-            className="text-xl py-2 w-full font-mono border-t border-l border-r"
+            className="text-xl py-2 w-full font-mono border"
             onClick={() =>
               document
                 .getElementById("experience")
@@ -172,7 +162,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             Experience
           </button>
           <button
-            className="text-xl py-2 w-full font-mono border-t border-l border-r"
+            className="text-xl py-2 w-full font-mono border"
             onClick={() =>
               document
                 .getElementById("projects")
@@ -183,7 +173,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           </button>
           <Link
             to="/resume"
-            className="text-xl py-2 w-full font-mono border-t border-b border-l border-r text-center"
+            className="text-xl py-2 w-full font-mono border text-center"
           >
             Resume
           </Link>
