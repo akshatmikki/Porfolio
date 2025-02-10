@@ -30,7 +30,7 @@ const Projects = ({ isDarkMode }) => {
                 <img
                   src={project.image}
                   width={550}
-                  height={550}
+                  height={450}
                   alt={project.title}
                   className="mb-6 rounded"
                 />
@@ -152,7 +152,7 @@ const Projects = ({ isDarkMode }) => {
                 <img
                   src={project.image}
                   width={550}
-                  height={550}
+                  height={450}
                   alt={project.title}
                   className="mb-6 rounded"
                 />
@@ -181,7 +181,7 @@ const Projects = ({ isDarkMode }) => {
                 <img
                   src={project.image}
                   width={550}
-                  height={550}
+                  height={450}
                   alt={project.title}
                   className=" rounded"
                 />
