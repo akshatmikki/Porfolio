@@ -70,7 +70,7 @@ const Projects = ({ isDarkMode }) => {
       Live
     </a>
   )}
-  {(index !== 2 || index === 4) && (
+  {(index !== 2) && (
     <a
       href={project.githubLink}
       target="_blank"
@@ -81,6 +81,7 @@ const Projects = ({ isDarkMode }) => {
     </a>
   )}
 </div>
+
 
             </motion.div>
             {index % 2 !== 0 ? (
