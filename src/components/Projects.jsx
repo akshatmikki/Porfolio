@@ -60,27 +60,28 @@ const Projects = ({ isDarkMode }) => {
                 </span>
               ))}
               <div className="mt-10">
-                {(index === 0 || index === 3) && (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cursor-pointer mr-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    Live
-                  </a>
-                )}
-                {(index !== 2) && (
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cursor-pointer bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-                  >
-                    GitHub
-                  </a>
-                )}
-              </div>
+  {(index === 0 || index === 3 || index === 4) && (
+    <a
+      href={project.liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cursor-pointer mr-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      Live
+    </a>
+  )}
+  {(index !== 2 || index === 4) && (
+    <a
+      href={project.githubLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="cursor-pointer bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+    >
+      GitHub
+    </a>
+  )}
+</div>
+
             </motion.div>
             {index % 2 !== 0 ? (
               <motion.div
