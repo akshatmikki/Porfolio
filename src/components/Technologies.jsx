@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaPhp, FaAws, FaWordpress } from "react-icons/fa";
-import { SiCplusplus, SiMysql, SiPython } from "react-icons/si";
+import { SiCplusplus, SiMysql, SiPython, SiReact, SiTailwindcss } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const iconVariants = (duration) => ({
@@ -23,9 +23,7 @@ const Technologies = ({ isDarkMode }) => {
         initial={{ opacity: 0, y: -100 }}
         viewport={{ once: true }}
         transition={{ duration: 1.5 }}
-        className={`my-20 text-center text-4xl ${
-          isDarkMode ? "text-neutral-600" : ""
-        }`}
+        className={`my-20 text-center text-4xl ${isDarkMode ? "text-neutral-600" : ""}`}
       >
         Technologies
       </motion.h1>
@@ -62,6 +60,12 @@ const Technologies = ({ isDarkMode }) => {
         </motion.div>
         <motion.div variants={iconVariants(5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
           <FaWordpress className="text-7xl text-blue-700" />
+        </motion.div>
+        <motion.div variants={iconVariants(3.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiReact className="text-7xl text-blue-400" />
+        </motion.div>
+        <motion.div variants={iconVariants(4.5)} initial="initial" animate="animate" className="rounded-2xl border-4 border-neutral-800 p-4">
+          <SiTailwindcss className="text-7xl text-cyan-500" />
         </motion.div>
       </motion.div>
     </div>
