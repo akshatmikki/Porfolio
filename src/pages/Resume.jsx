@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import resumeFile from "../assets/Akshat_Singhal.pdf";
+import resumeFile from "../assets/Akshat-Singhal.pdf";
 import { BiSun, BiMoon } from "react-icons/bi";
 import profilePic from "../assets/image.jpg";
 import Social from "../components/Social";
