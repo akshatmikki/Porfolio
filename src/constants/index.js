@@ -2,7 +2,7 @@ import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
-
+import project5 from "../assets/projects/project5.png";
 
 export const EXPERIENCES = [
   {
@@ -86,6 +86,15 @@ export const PROJECTS = [
     technologies: ["HTML", "CSS", "JavaScript", "Three.js", "Python", "Arduino"],
     liveLink: "https://3d-simulator.netlify.app/",
     githubLink: "https://github.com/akshatmikki/3d-simulator"
+  },
+  {
+    title: "Buzz React Website",
+    image: project5,
+    description:
+      "Enhanced UX/UI, leading to a 30% increase in user retention.",
+    technologies: ["React.js", "Tailwind CSS"],
+    liveLink: "https://buzzzzz-web.netlify.app/",
+    githubLink: "https://github.com/akshatmikki/Buzz"
   },
 ];
 
