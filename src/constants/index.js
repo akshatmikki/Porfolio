@@ -91,7 +91,7 @@ export const PROJECTS = [
     title: "Buzz React Website",
     image: project5,
     description:
-      "Enhanced UX/UI, leading to a 30% increase in user retention.",
+      "Developed Buzz, a modern and responsive website, featuring an intuitive UI for seamless user engagement",
     technologies: ["React.js", "Tailwind CSS"],
     liveLink: "https://buzzzzz-web.netlify.app/",
     githubLink: "https://github.com/akshatmikki/Buzz"
