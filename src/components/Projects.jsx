@@ -16,7 +16,7 @@ const Projects = ({ isDarkMode }) => {
       >
         Projects
       </motion.h1>
-      <div className="max-[768px]:hidden">
+      <div className="flex flex-col md:flex-row">
         {PROJECTS.map((project, index) => (
           <div key={index} className="flex flex-wrap lg:justify-center mb-20">
             {index % 2 === 0 ? (
