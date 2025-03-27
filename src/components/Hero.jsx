@@ -22,9 +22,10 @@ const Hero = ({ isDarkMode }) => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className={`max-[375px]:text-3xl  max-md:text-4xl pb-16 text-6xl font-thin tracking-tight lg:mt-16 xl:text-8xl ${
-                isDarkMode ? "text-neutral-800" : ""
-              }`}
+             className={`text-4xl max-[425px]:text-3xl sm:text-5xl md:text-6xl xl:text-8xl font-thin tracking-tight mt-6 lg:mt-16 ${
+  isDarkMode ? "text-neutral-800" : ""
+}`}
+
             >
               Akshat Singhal 
             </motion.h1>
