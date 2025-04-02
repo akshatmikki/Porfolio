@@ -6,6 +6,15 @@ import project5 from "../assets/projects/project5.png";
 
 export const EXPERIENCES = [
   {
+    year: "Dec 2024 - Present",
+    role: "Freelancer",
+    company: "Self-employed",
+    description: [
+      `Designed various website-related projects and learned various new tech stacks to make it more appealing.`,
+    ],
+    technologies: ["React.js", "Tailwind CSS", "Next.js", "JWT Authentication","API"],
+  },
+  {
     year: "Jul 2024 - Aug 2024",
     role: "Front end Developer Intern",
     company: "BlueStock Fintech",
